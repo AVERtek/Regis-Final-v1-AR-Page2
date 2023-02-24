@@ -1,1 +1,1 @@
-# Regis Test Demo AR UX
+# Regis Test AR2
