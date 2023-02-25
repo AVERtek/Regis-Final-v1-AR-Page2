@@ -164,13 +164,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   👆 <b style="color:#FFFFFF;"><strong>AR CLICK HERE</strong></b>
   </button>
 
-  <div id="ar-prompt">
+  <!--<div id="ar-prompt">
     <img src="images/"hand.png">
   </div>
 
   <button id="ar-failure">
     AR is not tracking!
-  </button>
+  </button> -->
 
   <div class="slider">
     <div class="slides">
@@ -194,6 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   window.switchSrc = (element, name) => {
     const base = "Models/" + name;
     modelViewer.src = base + '.glb';
+    modelViewer.sound = base + '.wav'; 
     modelViewer.poster = base + '.png';
     const slides = document.querySelectorAll(".slide");
     slides.forEach((element) => {element.classList.remove("selected");});
